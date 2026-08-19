@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polytope Bio</title>
+<meta name="description" content="Polytope Bio">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://polytope.bio/">
+<meta property="og:title" content="Polytope Bio">
+<meta property="og:description" content="Polytope Bio">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23000'/><text y='23' x='16' text-anchor='middle' font-family='Georgia,serif' font-size='20' fill='%23fff'>P</text></svg>">
+
+<style>
+  :root {
+    --fg: #ffffff;
+    --muted: #8a8a8a;
+    --bg: #000000;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+  }
+
+  body {
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  main {
+    width: 100%;
+    max-width: 32rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  .tagline {
+    margin: 1.25rem 0 0;
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    max-width: 30rem;
+  }
+
+  .meta {
+    margin: 2.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+
+  a {
+    color: var(--fg);
+    text-decoration: none;
+    border-bottom: 1px solid var(--muted);
+    padding-bottom: 1px;
+    transition: border-color 120ms ease;
+  }
+
+  a:hover, a:focus-visible { border-bottom-color: var(--fg); }
+
+  a:focus-visible {
+    outline: 2px solid var(--fg);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <!-- EDIT ME: name -->
+    <h1>Polytope Bio</h1>
+
+    <!-- EDIT ME: one-line description of what you do -->
+    <p class="tagline">Placeholder. Something is being built here.</p>
+
+    <!-- EDIT ME: contact, or delete this block -->
+    <p class="meta">
+      <a href="mailto:hello@polytope.bio">hello@polytope.bio</a>
+    </p>
+  </main>
+</body>
+</html>
