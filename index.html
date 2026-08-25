@@ -87,6 +87,27 @@
     border-bottom-color: var(--muted);
   }
 
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .mark {
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 2rem;
+    color: var(--fg);
+  }
+
+  .mark svg {
+    display: block;
+    width: clamp(34px, 6vw, 46px);
+    height: clamp(34px, 6vw, 46px);
+    overflow: visible;
+  }
+
   .roles { margin: 2.5rem 0 0; }
 
   .roles h2 {
@@ -130,7 +151,16 @@
 <body>
   <main>
     <!-- EDIT ME: name -->
-    <h1>Polytope Bio</h1>
+    <header class="head">
+      <h1>Polytope Bio</h1>
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="30 30 300 300" xmlns="http://www.w3.org/2000/svg">
+          <path d="M120.68 323.2L120.68 204.57M120.68 323.2L204.57 239.32M36.8 239.32L120.68 323.2M36.8 239.32L120.68 155.43M36.8 239.32L155.43 239.32M120.68 204.57L204.57 120.68M36.8 120.68L36.8 239.32M36.8 120.68L120.68 204.57M36.8 120.68L120.68 36.8M36.8 120.68L155.43 120.68M204.57 239.32L204.57 120.68M204.57 239.32L323.2 239.32M120.68 155.43L204.57 239.32M120.68 155.43L120.68 36.8M120.68 155.43L239.32 155.43M120.68 36.8L204.57 120.68M120.68 36.8L239.32 36.8M239.32 323.2L120.68 323.2M239.32 323.2L155.43 239.32M239.32 323.2L239.32 204.57M239.32 323.2L323.2 239.32M155.43 239.32L155.43 120.68M239.32 204.57L120.68 204.57M239.32 204.57L155.43 120.68M239.32 155.43L155.43 239.32M239.32 155.43L323.2 239.32M239.32 155.43L239.32 36.8M323.2 120.68L204.57 120.68M323.2 120.68L239.32 204.57M323.2 120.68L323.2 239.32M323.2 120.68L239.32 36.8M239.32 36.8L155.43 120.68" fill="none" stroke="currentColor" stroke-width="1"
+                vector-effect="non-scaling-stroke"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </header>
 
     <p class="tagline">Teaching AI the rules of biology</p>
 
@@ -149,6 +179,7 @@
     <p class="meta">
       <a href="mailto:hello@polytope.bio">hello@polytope.bio</a>
     </p>
+
   </main>
 </body>
 </html>
